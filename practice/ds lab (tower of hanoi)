@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+void tower(int n,int source,int destination,int temp)
+{
+    if(n==0)
+    return;
+    tower(n-1,source,destination,temp);
+    printf("\nmove dice %d form %c to %c",n,source,destination);
+    tower(n-1,temp,source,destination);
+}
+void main()
+{
+    int n;
+printf("Enter the number of dices:\n");
+scanf("%d",&n);
+tower(n,'A','B','C');
+printf("Total number of moves are:%d",(int)pow(2,n)-1);
+}
