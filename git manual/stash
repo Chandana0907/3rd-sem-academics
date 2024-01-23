@@ -1,0 +1,31 @@
+Creating and Managing Branches
+Write the commands to stash your changes, switch branches, and then apply the stashed changes.
+In Git, the git stash command is used to temporarily save changes that are not ready to be
+committed but need to be set aside. This is helpful when you want to switch branches or perform
+some other operation that requires a clean working directory.
+Step 1: Initialize a new Git Repository
+● Open a terminal or command prompt.
+● Create a Directory
+mkdir second
+● Navigate to the directory where you want to create your new Git repository.
+cd path/to/your/directory
+● Initialize a new Git repository.
+git init
+Step 2: Create a new branch named "feature-branch"
+● git branch feature-branch
+This command creates a new branch named "feature-branch".
+Step 3: Switch to the feature-branch
+● git checkout feature-branch
+This command switches to feature-branch from master branch.
+Step 4: To stash your changes:
+● git stash save "Your stash message"
+This command saves your local changes in a "stash" and provides an optional
+message describing the changes.
+Step- 5: Switch branches:
+● git checkout <branch_name>
+Replace <branch_name> with the name of the branch you want to switch to.
+Step 6: Apply the stashed changes:
+● git stash apply
+This command will apply the latest stash. If you have multiple stashes, you may
+need to specify the stash you want to apply by using git stash apply stash@{n},
+where n is the index of the stash you want to apply.
