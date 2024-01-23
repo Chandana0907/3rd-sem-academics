@@ -1,0 +1,23 @@
+Collaboration and Remote Repositories
+Fetch the latest changes from a remote repository and rebase your local branch onto the updated
+remote branch.
+To fetch the latest changes from a remote repository and rebase your local branch onto the
+updated remote branch, you can follow these steps:
+Step 1: Fetch the latest changes from the remote repository:
+git fetch
+This command fetches the latest changes from the remote repository without merging them into
+your local branches.
+Step 2: Rebase your local branch onto the updated remote branch:
+git rebase origin/<branch_name>
+Replace <branch_name> with the name of the branch you want to rebase. This command
+applies your local changes on top of the fetched changes from the remote branch.
+Step 3: Rebase the changes
+git add . # Stage the resolved changes
+git rebase --continue # Continue with the rebase
+Step 4: Push the rebased changes to the remote repository:
+git push origin <branch_name> --force
+Be cautious when using --force with git push as it overwrites the remote branch with your local
+changes.
+Ubuntu Support for Authentication was removed on 2021
+Download the Key from your github Account:
+git remote set-url origin https:// KEY@github.com/username/repo
