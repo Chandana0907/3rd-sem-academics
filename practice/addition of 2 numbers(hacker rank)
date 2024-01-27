@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int m,n,sum,diff;
+    float a,b,temp,task;
+    scanf("%d%d%f%f",&m,&n,&a,&b);
+    sum=m+n;
+    printf("%d",sum);
+    printf(" ");
+    diff=m-n;
+    printf("%d",diff);
+    temp=a+b;
+    printf("\n%0.1f",temp);
+    printf(" ");
+    task=a-b;
+    printf("%0.1f",task);
+    return 0;
+}
